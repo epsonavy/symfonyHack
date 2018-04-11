@@ -1,6 +1,6 @@
 # symfonyHack
 Here is a dirty-hack to enable doctrine:generate:entities with psr-4.
-Here is a dirty-hack to enable doctrine:generate:entities with psr-4.
+Here is a dirty-hack to enable doctrine:generate:entities with psr-4. or you can download those 3 files to your Symfony
 
 In Mapping/DisconnectedMetadataFactory.php, line 144 :
 ```
@@ -48,5 +48,5 @@ In Doctrine\ORM\Tools\EntityRepositoryGenerator.php
 //              . str_replace('\\', \DIRECTORY_SEPARATOR, $fullClassName) . '.php';
         // end of hack
 ```
-It works with psr-4 and i can do "app/console doctrine:generate:entities myBundle:myEntity"
+It works with psr-4 and you can do "app/console doctrine:generate:entities myBundle:myEntity"
 Warning: entities are in folder: mybundle/Entity/myEntity.php
